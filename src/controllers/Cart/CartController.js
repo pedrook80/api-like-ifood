@@ -9,7 +9,7 @@ const CartController = {
 
         try {
 
-            const createdCart = await Cart.create({...bodyData, username: user_id})
+            const createdCart = await Cart.create({...bodyData, purchaseConfirm:0, username: user_id})
             await createdCart.populate('products').execPopulate()
 
             return res.status(200).json(createdCart)
@@ -65,6 +65,25 @@ const CartController = {
 
             const updatedCart = await Cart.findByIdAndUpdate(cart_id, bodyData, { new: true })
             return res.status(200).json(updatedCart)
+
+        } catch(err) {
+
+            return res.status(400).json(err)
+
+        }
+
+    },
+
+    async confirmCart(req, res) {
+
+        const bodyData = {purchaseConfirm:1}
+        const { user_id } = req.params
+        
+
+        try {
+
+            const confirmCart = await Cart.updateMany({username: user_id}, bodyData )
+            return res.status(200).json(confirmCart)
 
         } catch(err) {
 

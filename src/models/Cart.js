@@ -13,6 +13,10 @@ const Schema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    purchaseConfirm: {
+        type: Number,
+        required: true
+    },
     payment: {
         card_id: {
                 type: mongoose.Schema.Types.ObjectId,
