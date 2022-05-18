@@ -36,3 +36,7 @@ $  npm run start
 O sistema vai funcionar na seguinte porta:
 http://localhost:3333
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d738393c956401aa1fbc5808c2023cb83f3d1b9b
