@@ -18,6 +18,12 @@ MongoDB como banco de dados e utilizando o Mongoose como intermedio para conexã
  
 As rotas estão salvas na pasta RoutesPostman e foi usado o Postman para documentação dessas rotas
 
+*A ideia deste projeto é que cada usuario deve ter seus dados salvos como seu endereço e cartão.* 
+
+*E que cada loja possa ter seus produtos, mas que cada loja seria criada por um usuario.*
+
+*E cada usuario teria seu carrinho com seus produtos e depois de finalizar sua escolha ela confirme sua compra.*
+
 ## Instalar dependencias 
 Necessita ter um gerenciador de pacotes instalado em sua maquina
 ```js
