@@ -8,8 +8,15 @@ Bcrypt para segurança de senhas
 JWT para utilização de token para o controle de usuario
 
 MongoDB como banco de dados e utilizando o Mongoose como intermedio para conexão
-
-As rotas estão salvas na pasta RoutesPostman utilizando o Postman
+  * A modelagem de banco ficou divida em Users, Adress, Cards, Stores, Products e Carts
+  * Users contem usuarios
+  * Adress contem o endereço dos usuarios 
+  * Cards contem os cartões dos usuarios 
+  * Stores contem informações das lojas
+  * Products contem os produtos de cada loja
+  * Carts são os carrinhos de cada usuario 
+ 
+As rotas estão salvas na pasta RoutesPostman e foi usado o Postman para documentação dessas rotas
 
 ## Instalar dependencias 
 Necessita ter um gerenciador de pacotes instalado em sua maquina
